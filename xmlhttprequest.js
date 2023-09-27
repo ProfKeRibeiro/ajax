@@ -25,7 +25,7 @@ function carregaPagina(el) {
     const inputcep = document.querySelector('#cep');
     request({
         method: 'GET',
-        url: `https://viacep.com.br/ws/${inputcep.value}/json/`,
+        url: `https://viacep.com.br/ws/${inputcep.value}/xml/`,
         success(response) {
             carregaResultado(response);
         },
